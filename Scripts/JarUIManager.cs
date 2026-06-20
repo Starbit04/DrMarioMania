@@ -143,8 +143,9 @@ public partial class JarUIManager : Node
 
 		if (IsMultiplayer && jarMan.HasWonEnoughRounds)
 		{
-			nextButton.Visible = false;
-			quitButton.GrabFocus();
+			nextButton.Text = "REMATCH";
+			nextButton.Visible = true;
+			nextButton.GrabFocus();
 		}
 		else
 		{
